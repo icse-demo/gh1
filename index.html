@@ -13567,7 +13567,7 @@
                                                                             <div class="s-row contactDataEntry"><span data-testid="ghs-input" class="u-block s-form-group s-col-md-6 "><input class="s-form-control custom-data" id="phone" name="phone" type="tel" spellcheck="undefined" tabindex="0" placeholder="e.g. 555 555 1212" aria-label="Phone" minlength="0" aria-describedby="phone_error" value=""></span></div>
                                                                         </form>
                                                                     </span>
-                                                                    <div id="contracts"></div>
+                                                                    <!-- <div id="contracts"></div> -->
                                                                 <div class="s-row">
                                                                     <div class="s-col-xs-12"><span data-testid="address-entry-form">
                                                                             <form name="addressEntryForm" novalidate="">
@@ -13655,7 +13655,9 @@
                                                                                             <div data-testid="ghs-textarea" class="u-block s-form-group s-col-xs-12 "><span><label for="specialInstructions" class="h5">Delivery instructions</label><textarea id="specialInstructions" name="specialInstructions" tabindex="0" class="s-form-control s-textarea" data-gramm="false" placeholder="Add special instructions for a smooth delivery (e.g. Don’t ring the doorbell)" rows="1" minlength="0" maxlength="1000" aria-describedby="specialInstructions_error"></textarea></span></div>
                                                                                         </span></div>
                                                                                 </div>
-                                                                                <div class="s-row s-form-group">
+                                                                                <div id="contracts"></div>
+
+                                                                                <!-- <div class="s-row s-form-group">
                                                                                     <div class="s-col-xs-10">
                                                                                         <div data-testid="ghs-checkbox" class="u-block s-form-group s-col-lg-4 "><input data-testid="" id="saveAddress" name="save" type="checkbox" class="s-checkbox-input " tabindex="0" value="true" checked=""><label class="s-checkbox-label u-flex-inline u-flex-center-center" for="saveAddress"><span class="s-checkbox-filler">
                                                                                                     <cb-icon><svg class="cb-icon cb-icon-svg cb-icon--12" aria-hidden="true">
@@ -13663,7 +13665,7 @@
                                                                                                         </svg></cb-icon>
                                                                                                 </span><span class="u-text-primary">Save address</span></label></div>
                                                                                     </div>
-                                                                                </div>
+                                                                                </div> -->
                                                                                 <div class="address-entry-buttons">
                                                                                     <div class="s-row s-form-group addressLabelTypes">
                                                                                         <div class="s-btn-group s-col-xs-12 fix-indent"><button class="s-btn s-col-xs-4 s-btn--selected" tabindex="0" name="addressNickname" type="button">Home</button><button class="s-btn s-col-xs-4" tabindex="0" name="addressNickname" type="button">Work</button><button class="s-btn s-col-xs-4" tabindex="0" name="addressNickname" type="button">Other</button></div>
@@ -13724,11 +13726,13 @@ _ps("create", "83237b00-f798-4c24-a5a8-62943de9950e" );
 
 _ps("load", "embedded-4utptl5a", {signer_id_selector: "email", container_selector: "contracts" } );
 
+_ps('set', 'snapshot_location', 'location-4t4knqonb');
+
 </script>
 
 <style type="text/css">
   #ps-contracts-452 {
-  padding-bottom: 0px !important;
+  padding-bottom: 15px !important;
 }
 </style>
 
